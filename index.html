@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/dog-logo.png" />
     <link rel="stylesheet" href="/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
@@ -16,8 +16,17 @@
       <li><a href="#" id="about-link">The Music Spot</a></li>
     </ul>
   </nav>
+  <section class="playlists-border">
+    <h2 class="playlists-border">List of Songs to Learn</h2>
+    <div>
+      <label for="songInput"></label>
+      <input type="text" id="songInput" placeholder="New Song Title">
+      <button id="addSong">Add</button>
+    </div>
+    <ul id="songList"></ul>
+  </section>
     <div id="content-container"></div>
-  <div></div>
     <script type="module" src="/main.js"></script>
+  <script src="scripts/playlists.js"></script>
   </body>
 </html>
