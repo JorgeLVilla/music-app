@@ -26,5 +26,8 @@ contactLink.addEventListener("click", () => loadPage("contact"));
 const aboutLink = document.getElementById("about-link");
 aboutLink.addEventListener("click", () => loadPage("about"));
 
+const spotifyLink = document.getElementById("spotify-link");
+spotifyLink.addEventListener("click", () => loadPage("spotify-user"));
+
 // Initial page load
-loadPage("profile");
+loadPage("spotify-user");

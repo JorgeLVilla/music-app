@@ -1,4 +1,4 @@
-require('dotenv').config();
+// require('dotenv').config();
 
 const clientId = process.env.CLIENT_ID;
 // Replace with your client id
@@ -8,7 +8,7 @@ const code = params.get("code");
 console.log(clientId);
 
 if (!code) {
-    redirectToAuthCodeFlow(clientId);
+    redirectToAuthCodeFlow(clientId).then(r => console.log(r));
 } else {
     getAccessToken(clientId, code)
         .then((accessToken) => fetchProfile(accessToken))
