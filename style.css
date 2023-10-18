@@ -178,3 +178,26 @@ li {
 a:link, a:visited {
   text-decoration: none;
 }
+
+.app-container {
+  display: flex;
+  margin: 50px;
+  min-height: 90vh;
+}
+
+nav {
+  min-width: 30%;
+  border: 1px solid white;
+}
+
+#content-container {
+    min-width: 70%;
+    border: 1px solid white;
+}
+
+.nav-links-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

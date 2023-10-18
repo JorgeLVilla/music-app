@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/dog-logo.png" />
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles/content-cont.css">
+    <link rel="stylesheet" href="/styles/nav.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
+  <div class="app-container">
   <nav>
-    <ul>
+    <ul class="nav-links-container">
       <li><a href="#" id="playlists-link">Set Lists</a></li>
       <li><a href="#" id="profile-link">My Profile</a></li>
       <li><a href="#" id="contact-link">Contact</a></li>
@@ -17,17 +20,18 @@
       <li><a href="#" id="spotify-link">Spotify Profile</a></li>
     </ul>
   </nav>
-  <section class="playlists-border">
-    <h2 class="playlists-border">List of Songs to Learn</h2>
-    <div>
-      <label for="songInput"></label>
-      <input type="text" id="songInput" placeholder="New Song Title">
-      <button id="addSong">Add</button>
-    </div>
-    <ul id="songList"></ul>
-  </section>
+<!--  <section class="playlists-border">-->
+<!--    <h2 class="playlists-border">List of Songs to Learn</h2>-->
+<!--    <div>-->
+<!--      <label for="songInput"></label>-->
+<!--      <input type="text" id="songInput" placeholder="New Song Title">-->
+<!--      <button id="addSong">Add</button>-->
+<!--    </div>-->
+<!--    <ul id="songList"></ul>-->
+<!--  </section>-->
     <div id="content-container"></div>
     <script type="module" src="/main.js"></script>
-  <script src="scripts/playlists.js"></script>
+    <script src="scripts/playlists.js"></script>
+  </div>
   </body>
 </html>
