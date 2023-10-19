@@ -1,180 +1,151 @@
-/*:root {*/
-/*  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;*/
-/*  line-height: 1.5;*/
-/*  font-weight: 400;*/
-
-/*  color-scheme: light dark;*/
-/*  color: rgba(255, 255, 255, 0.87);*/
-/*  background-color: #242424;*/
-
-/*  font-synthesis: none;*/
-/*  text-rendering: optimizeLegibility;*/
-/*  -webkit-font-smoothing: antialiased;*/
-/*  -moz-osx-font-smoothing: grayscale;*/
-/*  -webkit-text-size-adjust: 100%;*/
+/*!* Box sizing rules *!*/
+/**,*/
+/**::before,*/
+/**::after {*/
+/*  box-sizing: border-box;*/
 /*}*/
 
-/*a {*/
-/*  font-weight: 500;*/
-/*  color: #646cff;*/
-/*  text-decoration: inherit;*/
-/*}*/
-/*a:hover {*/
-/*  color: #535bf2;*/
+/*!* Prevent font size inflation *!*/
+/*html {*/
+/*  -moz-text-size-adjust: none;*/
+/*  -webkit-text-size-adjust: none;*/
+/*  text-size-adjust: none;*/
 /*}*/
 
-/*body {*/
+/*!* Remove default margin in favour of better control in authored CSS *!*/
+/*body, h1, h2, h3, h4, p,*/
+/*figure, blockquote, dl, dd {*/
 /*  margin: 0;*/
-/*  display: flex;*/
-/*  place-items: center;*/
-/*  min-width: 320px;*/
-/*  min-height: 100vh;*/
 /*}*/
 
-/*h1 {*/
-/*  font-size: 3.2em;*/
+/*!* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed *!*/
+/*ul[role='list'],*/
+/*ol[role='list'] {*/
+/*  list-style: none;*/
+/*}*/
+
+/*!* Set core body defaults *!*/
+/*body {*/
+/*  min-height: 100vh;*/
+/*  line-height: 1.5;*/
+/*  background-color: #2E3642;*/
+/*  color: #a7b4c4;*/
+/*}*/
+
+/*!* Set shorter line heights on headings and interactive elements *!*/
+/*h1, h2, h3, h4,*/
+/*button, input, label {*/
 /*  line-height: 1.1;*/
 /*}*/
 
-/*#app {*/
-/*  max-width: 1280px;*/
-/*  margin: 0 auto;*/
-/*  padding: 2rem;*/
-/*  text-align: center;*/
+/*!* Balance text wrapping on headings *!*/
+/*h1, h2,*/
+/*h3, h4 {*/
+/*  text-wrap: normal;*/
 /*}*/
 
-/*.logo {*/
-/*  height: 6em;*/
-/*  padding: 1.5em;*/
-/*  will-change: filter;*/
-/*  transition: filter 300ms;*/
-/*}*/
-/*.logo:hover {*/
-/*  filter: drop-shadow(0 0 2em #646cffaa);*/
-/*}*/
-/*.logo.vanilla:hover {*/
-/*  filter: drop-shadow(0 0 2em #3178c6aa);*/
+/*!* A elements that don't have a class get default styles *!*/
+/*a:not([class]) {*/
+/*  text-decoration-skip-ink: auto;*/
+/*  color: currentColor;*/
 /*}*/
 
-/*.card {*/
-/*  padding: 2em;*/
+/*!* Make images easier to work with *!*/
+/*img,*/
+/*picture {*/
+/*  max-width: 100%;*/
+/*  display: block;*/
 /*}*/
 
-/*.read-the-docs {*/
-/*  color: #888;*/
+/*!* Inherit fonts for inputs and buttons *!*/
+/*input, button,*/
+/*textarea, select {*/
+/*  font: inherit;*/
 /*}*/
 
-/*button {*/
-/*  border-radius: 8px;*/
-/*  border: 1px solid transparent;*/
-/*  padding: 0.6em 1.2em;*/
-/*  font-size: 1em;*/
-/*  font-weight: 500;*/
-/*  font-family: inherit;*/
-/*  background-color: #1a1a1a;*/
-/*  cursor: pointer;*/
-/*  transition: border-color 0.25s;*/
-/*}*/
-/*button:hover {*/
-/*  border-color: #646cff;*/
-/*}*/
-/*button:focus,*/
-/*button:focus-visible {*/
-/*  outline: 4px auto -webkit-focus-ring-color;*/
+/*!* Make sure textareas without a rows attribute are not tiny *!*/
+/*textarea:not([rows]) {*/
+/*  min-height: 10em;*/
 /*}*/
 
-/*@media (prefers-color-scheme: light) {*/
-/*  :root {*/
-/*    color: #213547;*/
-/*    background-color: #ffffff;*/
-/*  }*/
-/*  a:hover {*/
-/*    color: #747bff;*/
-/*  }*/
-/*  button {*/
-/*    background-color: #f9f9f9;*/
-/*  }*/
+/*!* Anything that has been anchored to should have extra scroll margin *!*/
+/*:target {*/
+/*  scroll-margin-block: 5ex;*/
 /*}*/
 
-/* Box sizing rules */
-*,
-*::before,
-*::after {
+/*!*Link lists *!*/
+/*li {*/
+/*  list-style-type: none;*/
+/*}*/
+
+/* Reset some default styles and provide a clean slate */
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-/* Prevent font size inflation */
-html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
-}
-
-/* Remove default margin in favour of better control in authored CSS */
-body, h1, h2, h3, h4, p,
-figure, blockquote, dl, dd {
-  margin: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
-
-/* Set core body defaults */
+/* Apply a simple, elegant font to the entire page */
 body {
-  min-height: 100vh;
-  line-height: 1.5;
-  background-color: #2E3642;
-  color: #a7b4c4;
+  font-family: 'Arial', sans-serif;
 }
 
-/* Set shorter line heights on headings and interactive elements */
-h1, h2, h3, h4,
-button, input, label {
-  line-height: 1.1;
+/* Add a subtle background color and center content */
+html, body {
+  height: 100%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Balance text wrapping on headings */
-h1, h2,
-h3, h4 {
-  text-wrap: normal;
+/* Style links with a different color and remove underlines */
+a {
+  text-decoration: none;
+  color: #007BFF;
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-  color: currentColor;
+/* Create a responsive, centered container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
+/* Style buttons with a modern look */
+button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-/* Inherit fonts for inputs and buttons */
-input, button,
-textarea, select {
-  font: inherit;
+button:hover {
+  background-color: #0056b3;
 }
 
-/* Make sure textareas without a rows attribute are not tiny */
-textarea:not([rows]) {
-  min-height: 10em;
+/* Add responsive design for mobile devices */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  button {
+    padding: 8px 16px;
+  }
 }
 
-/* Anything that has been anchored to should have extra scroll margin */
-:target {
-  scroll-margin-block: 5ex;
+/* Highlight important elements with a soft shadow */
+.highlight {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-/*Link lists */
-li {
-  list-style-type: none;
-}
+
 a:link, a:visited {
   text-decoration: none;
 }

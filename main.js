@@ -30,4 +30,5 @@ const spotifyLink = document.getElementById("spotify-link");
 spotifyLink.addEventListener("click", () => loadPage("spotify-user"));
 
 // Initial page load
-loadPage("spotify-user");
+loadPage("profile");
+

@@ -1,16 +1,19 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/dog-logo.png" />
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/styles/content-cont.css">
-    <link rel="stylesheet" href="/styles/nav.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-  <div class="app-container">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/dog-logo.png" />
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/styles/content-cont.css">
+  <link rel="stylesheet" href="/styles/nav.css">
+  <link rel="stylesheet" href="/styles/modal.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sam's Music Spot</title>
+</head>
+
+<body>
+  <!-- <div class="app-container">
   <nav>
     <ul class="nav-links-container">
       <li><a href="#" id="playlists-link">Set Lists</a></li>
@@ -19,20 +22,31 @@
       <li><a href="#" id="about-link">The Music Spot</a></li>
       <li><a href="#" id="spotify-link">Spotify Profile</a></li>
     </ul>
-  </nav>
-<!--  <section class="playlists-border">-->
-<!--    <h2 class="playlists-border">List of Songs to Learn</h2>-->
-<!--    <div>-->
-<!--      <label for="songInput"></label>-->
-<!--      <input type="text" id="songInput" placeholder="New Song Title">-->
-<!--      <button id="addSong">Add</button>-->
-<!--    </div>-->
-<!--    <ul id="songList"></ul>-->
-<!--  </section>-->
-    <div id="content-container"></div>
-    <script type="module" src="/main.js"></script>
-    <script src="scripts/playlists.js"></script>
-    <script type="module" src="scripts/fetch-test.js"></script>
-  </div>
-  </body>
+  </nav> -->
+  <!-- <div id="content-container"></div> -->
+
+
+
+
+  <section>
+    <h1>Fun Fact of the Day</h1>
+    <button class="open-modal-btn">Open</button>
+
+    <div class="modal-overlay">
+      <div class="modal-container hidden">
+        <h3>This is the modal content</h3>
+        <button class="close-btn">Close</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <script type="module" src="/main.js"></script> -->
+  <!-- <script src="scripts/playlists.js"></script> -->
+  <script src="scripts/modal.js"></script>
+
+  <!-- <script type="module" src="scripts/fetch-test.js"></script> -->
+  <!--  </div>-->
+</body>
+
 </html>
