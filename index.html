@@ -1,64 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/dog-logo.png" />
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/styles/content-cont.css">
-  <link rel="stylesheet" href="/styles/nav.css">
-  <link rel="stylesheet" href="/styles/modal.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sam's Music Spot</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/dog-logo.png"/>
+  <title>Container App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- <div class="app-container">
-  <nav>
-    <ul class="nav-links-container">
-      <li><a href="#" id="playlists-link">Set Lists</a></li>
-      <li><a href="#" id="profile-link">My Profile</a></li>
-      <li><a href="#" id="contact-link">Contact</a></li>
-      <li><a href="#" id="about-link">The Music Spot</a></li>
-      <li><a href="#" id="spotify-link">Spotify Profile</a></li>
-    </ul>
-  </nav> -->
-  <!-- <div id="content-container"></div> -->
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#" onclick="loadPage('/src/about.html')">About</a>
+  <a href="#" onclick="loadPage('/src/contact.html')">Contact</a>
+  <a href="#" onclick="loadPage('/src/playlists.html')">Playlists</a>
+</div>
 
+<!-- Container for Page Content -->
+<div class="container" id="content-container">
+  <!-- Content will be loaded here -->
+</div>
 
-
-
-  <!-- <section>
-    <h1>Fun Fact of the Day</h1>
-    <button class="open-modal-btn">Open</button>
-
-    <div class="modal-overlay">
-      <div class="modal-container hidden">
-        <h3>This is the modal content</h3>
-        <button class="close-btn">Close</button>
-      </div>
-    </div>
-  </section> -->
-
-  <section>
-    <form action="" class="form-container" method="post">
-      <label for="title"></label><input type="text" id="title">
-      <label for="artist"></label><input type="text" id="artist" autofocus>
-      <label for="song-key"></label><input type="text" id="song-key">
-
-      <button  id="add-song-btn">Add song to list</button>
-    </form>
-  </section>
-
-
-
-  <!-- <script type="module" src="/main.js"></script> -->
-  <!-- <script src="scripts/playlists.js"></script> -->
-  <!--  <script src="scripts/modal.js"></script>-->
-
-  <!-- <script type="module" src="scripts/fetch-test.js"></script> -->
-   <script type="module" src="scripts/construct.js"></script>
-  <!--  </div>-->
+<script src="main.js"></script>
+<script src="/scripts/playlists.js"></script>
 </body>
 
 </html>

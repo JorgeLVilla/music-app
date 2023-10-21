@@ -1,7 +1,8 @@
 const titleInput = document.getElementById('title');
 const artistInput = document.getElementById('artist');
 const songKeyInput = document.getElementById('songKey');
-const submitButton = document.getElementById('submit');
+const submitButton = document.getElementById('add-song-btn');
+const songList = document.getElementById('song-list');
 
 class Song {
     constructor(title, artist, songKey) {
@@ -29,12 +30,14 @@ class Song {
     }
 }
 
-submitButton.addEventListener('click', (event) => {
-    event.preventDefault()
+submitButton.addEventListener('click', function (event) {
+    event.preventDefault();
     const newSong = new Song(titleInput.value, artistInput.value, songKeyInput.value);
+    console.log(titleInput.value);
     console.log(newSong);
     return newSong;
 });
+
 // const addSong = () => {
 //     const newSong = new Song(titleInput.value, artistInput.value, songKeyInput.value);
 //     console.log(newSong);
