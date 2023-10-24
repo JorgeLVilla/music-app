@@ -15,7 +15,7 @@ function loadPage(pageUrl) {
 
 // Function to load an associated JavaScript file
 function loadScript(scriptUrl) {
-    const script = document.createElement('scripts');
+    const script = document.createElement('script');
     script.src = scriptUrl;
     document.body.appendChild(script);
 }
