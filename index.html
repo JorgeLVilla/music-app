@@ -5,25 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/svg+xml" href="/dog-logo.png" />
-  <title>Container App</title>
+  <title>Sam's Music Spot</title>
   <link rel="stylesheet" href="style.css">
+
   <link rel="stylesheet" href="styles/modal.css">
 </head>
 
 <body>
+  <div class="app-container">
+    
   <!-- Navigation Bar -->
   <div class="navbar">
+    <a href="#" onclick="loadPage('/src/home.html')">Home</a>
     <a href="#" onclick="loadPage('/src/about.html')">About</a>
     <a href="#" onclick="loadPage('/src/contact.html')">Contact</a>
     <a href="#" onclick="loadPage('/src/learn-song.html')">Learn Song</a>
   </div>
 
   <!-- Container for Page Content -->
-  <div class="container" id="content-container">
+  <div class="content-container" id="content-container">
     <!-- Content will be loaded here -->
   </div>
 
+  </div>
+
   <script src="main.js"></script>
+
 </body>
 
 </html>

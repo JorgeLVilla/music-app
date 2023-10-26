@@ -19,3 +19,7 @@ function loadScript(scriptUrl) {
     script.src = scriptUrl;
     document.body.appendChild(script);
 }
+
+window.onload = function () {
+    loadPage('src/home.html');
+}

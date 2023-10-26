@@ -1,5 +1,3 @@
-console.log('hello')
-
 document.addEventListener("DOMContentLoaded", () => {
     class Song {
         constructor(id, text, done) {
