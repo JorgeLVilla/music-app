@@ -1,0 +1,11 @@
+h1 {
+  font-weight: 600;
+}
+
+.main-container {
+  border: solid 2px white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
