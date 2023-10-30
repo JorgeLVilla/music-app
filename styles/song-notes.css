@@ -1,0 +1,12 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.edit-button, .delete-button {
+    margin-left: 10px;
+    cursor: pointer;
+}
