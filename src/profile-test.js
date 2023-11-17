@@ -4,7 +4,6 @@ function saveProfile() {
   var username = prompt("Enter your username:");
   var email = prompt("Enter your email address:");
 
-  // Create a JSON object with the profile information
   var profile = {
     FirstName: firstName,
     LastName: lastName,
@@ -12,14 +11,50 @@ function saveProfile() {
     Email: email,
   };
 
-  // Convert the profile object to a JSON string
   var profileString = JSON.stringify(profile);
-
-  // Saving the profile information to local storage
   localStorage.setItem("profile", profileString);
 
   console.log("Profile information saved successfully!");
 }
 
-// Call the function to save the profile information
+function editProfile() {
+  var storedProfile = localStorage.getItem("profile");
+  if (storedProfile) {
+    var profile = JSON.parse(storedProfile);
+
+    console.log("Current Profile Information:");
+    console.log(profile);
+
+    var firstName = prompt(
+      "Enter your new first name (current: " + profile.FirstName + "):"
+    );
+    var lastName = prompt(
+      "Enter your new last name (current: " + profile.LastName + "):"
+    );
+    var username = prompt(
+      "Enter your new username (current: " + profile.Username + "):"
+    );
+    var email = prompt(
+      "Enter your new email address (current: " + profile.Email + "):"
+    );
+
+    profile.FirstName = firstName || profile.FirstName;
+    profile.LastName = lastName || profile.LastName;
+    profile.Username = username || profile.Username;
+    profile.Email = email || profile.Email;
+
+    var updatedProfileString = JSON.stringify(profile);
+    localStorage.setItem("profile", updatedProfileString);
+
+    console.log("Profile information updated successfully!");
+  } else {
+    console.log("No profile found. Please create a profile first.");
+  }
+}
+
+// Example usage:
+// Save profile
 saveProfile();
+
+// Edit profile
+editProfile();
