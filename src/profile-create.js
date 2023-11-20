@@ -9,6 +9,7 @@ function saveProfile() {
     LastName: lastName,
     Username: username,
     Email: email,
+    Picture: null, // Placeholder for the picture
   };
 
   var profileString = JSON.stringify(profile);
@@ -52,6 +53,33 @@ function editProfile() {
   }
 }
 
+function uploadPicture() {
+  var fileInput = document.createElement("input");
+  fileInput.type = "file";
+  fileInput.accept = "image/*";
+  fileInput.addEventListener("change", function (event) {
+    var file = event.target.files[0];
+    if (file) {
+      var reader = new FileReader();
+      reader.onload = function (event) {
+        var imageData = event.target.result;
+        var storedProfile = localStorage.getItem("profile");
+        if (storedProfile) {
+          var profile = JSON.parse(storedProfile);
+          profile.Picture = imageData; // Saving image data to the profile
+          var updatedProfileString = JSON.stringify(profile);
+          localStorage.setItem("profile", updatedProfileString);
+          console.log("Picture uploaded and saved to profile!");
+        } else {
+          console.log("No profile found. Please create a profile first.");
+        }
+      };
+      reader.readAsDataURL(file);
+    }
+  });
+  fileInput.click();
+}
+
 // Example usage:
 // Save profile
 saveProfile();
@@ -59,4 +87,5 @@ saveProfile();
 // Edit profile
 editProfile();
 
-//Testing out new ways to save and edit profile in app
+// Upload picture
+uploadPicture();
