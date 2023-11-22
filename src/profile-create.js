@@ -1,4 +1,27 @@
 function saveProfile() {
+  // ... (rest of the saveProfile function)
+
+function editProfile() {
+  // ... (rest of the editProfile function)
+
+function uploadPicture() {
+  // ... (rest of the uploadPicture function)
+
+// Example usage:
+// Save profile
+saveProfile();
+
+// Edit profile
+editProfile();
+
+// Upload picture
+uploadPicture();
+
+
+
+
+function saveProfile() {
+
   var firstName = prompt("Enter your first name:");
   var lastName = prompt("Enter your last name:");
   var username = prompt("Enter your username:");
